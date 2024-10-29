@@ -14,7 +14,6 @@ import img4 from "../../assets/img4.jpg";
 import img5 from "../../assets/img5.jpg";
 
 const Work = () => {
-  const [showMore, setShowMore] = useState(false);
   
 
   const containerRef = useRef(null); // Referência para o container-animation

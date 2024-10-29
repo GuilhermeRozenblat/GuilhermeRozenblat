@@ -2,9 +2,7 @@ import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import "./Hero.css";
-import Guisemfundo from "../../assets/Guisemfundo.png";
 import GuiProfile from "../../assets/GuiProfilepic.png";
-import Guilogosolo from "../../assets/Guilogosolo.png"; // Certifique-se de que o caminho está correto
 import Guilogoverde from "../../assets/Guilogoverde2.png"; // Certifique-se de que o caminho está correto
 
 const Hero = () => {
