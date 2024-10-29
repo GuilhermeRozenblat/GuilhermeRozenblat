@@ -1,5 +1,5 @@
 .about-section {
-  padding: 60px 10px 0px;
+  padding: 40px 10px 0px;
   color: #ffffff;
   background-color: #06080C;
   text-align: center;
@@ -145,7 +145,7 @@
 /* Responsive Styles */
 @media (max-width: 768px) {
   .section-title{
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   .about-container {
       flex-direction: column;

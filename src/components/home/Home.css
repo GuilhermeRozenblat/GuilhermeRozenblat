@@ -1,7 +1,8 @@
+/* Estilo da seção principal */
 .home {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: var(--app-height); /* Altura dinâmica para excluir a barra de navegação */
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -13,14 +14,14 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: var(--app-height); /* Altura dinâmica para o vídeo de fundo */
     object-fit: cover;
 }
 
 .content {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: var(--app-height); /* Altura dinâmica para conteúdo sobre o vídeo */
     background-color: #eb58ffe1;
     mix-blend-mode: luminosity;
 }
@@ -28,7 +29,7 @@
 .content2 {
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: var(--app-height); /* Altura dinâmica para content2 */
     text-align: left;
     font-size: 7.5vw;
     font-family: "NeueMachinaLight";
@@ -57,32 +58,25 @@ h2 {
     margin-top: 10px;
 }
 
-/* Responsive Styles */
+/* Estilos Responsivos */
 @media (max-width: 768px) {
-
     h1 {
-        
         font-size: 16vw;
     }
 
     h2 {
         font-size: 5vw;
-        
     }
 }
 
 @media (max-width: 480px) {
-    
-
     h1 {
         margin-bottom: 40px;
         font-size: 16vw;
-        
     }
 
     h2 {
         font-size: 6vw;
         padding-left: 0px;
-        
     }
 }
