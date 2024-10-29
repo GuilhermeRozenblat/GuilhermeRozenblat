@@ -5,15 +5,7 @@ import firebaseLogo from "../../assets/firebase.png";
 import AndroidStudioLogo from "../../assets/android-studio-icon.png";
 import PlayStoreLogo from "../../assets/icons8-google-play-144.png";
 import UPPESLogo from "../../assets/Uppes_logo_512x512.png";
-import PhotoMenu from "../../assets/MenuUppes.png";
-import PhotoLogin from "../../assets/printLoginUppespng.png";
-import LoginEMenu from "../../assets/LoginEMenu.png";
-import AdmineEscolha from "../../assets/AdmineEscolha.png";
-import CadastroESucesso from "../../assets/CadastroESucesso.png";
-import catalogoEPdf from "../../assets/catalogoEPdf.png";
-import Plaqueta from "../../assets/plaquetas.png";
-import mockupUppes from "../../assets/uppesMockup2.png";
-import demo1 from "../../assets/demo1.webm";
+
 
 import img1 from "../../assets/img1.jpg";
 import img2 from "../../assets/img2.jpg";
@@ -23,7 +15,7 @@ import img5 from "../../assets/img5.jpg";
 
 const Work = () => {
   const [showMore, setShowMore] = useState(false);
-  const [slide, setSlide] = useState(0);
+  
 
   const containerRef = useRef(null); // Referência para o container-animation
 
@@ -69,32 +61,6 @@ const Work = () => {
       }
     };
   }, []);
-
-  // Dados da galeria de imagens (adicione as imagens reais aqui)
-  const galleryData = [
-    { src: mockupUppes, alt: "Imagem 1" },
-    { src: LoginEMenu, alt: "Imagem 2" },
-    { src: AdmineEscolha, alt: "Imagem 3" },
-    { src: CadastroESucesso, alt: "Imagem 4" },
-    { src: catalogoEPdf, alt: "Imagem 5" },
-    { src: PhotoMenu, alt: "Imagem 6" },
-  ];
-
-  const nextSlide = () => {
-    setSlide((prevSlide) =>
-      prevSlide === galleryData.length - 1 ? 0 : prevSlide + 1
-    );
-  };
-
-  const prevSlide = () => {
-    setSlide((prevSlide) =>
-      prevSlide === 0 ? galleryData.length - 1 : prevSlide - 1
-    );
-  };
-
-  const handleToggleMore = () => {
-    setShowMore(!showMore);
-  };
 
   return (
     <section id="work" className="work-section">
