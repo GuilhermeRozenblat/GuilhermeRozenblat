@@ -1,0 +1,68 @@
+/* Estilo da sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80px; /* Sidebar estreita com apenas ícones */
+    height: 100%;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+  }
+  
+  /* Estilo para os ícones de redes sociais */
+  .social-icons {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    margin: 20px 0;
+  }
+  
+  .social-icons li a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-icons li a:hover {
+    color: #999; /* Cor ao passar o mouse */
+  }
+  
+  /* Botão para alternar o tema */
+  .toggle-theme-button {
+    margin-bottom: 20px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-theme-button:hover {
+    background-color: #555;
+  }
+  
+  /* Tema escuro */
+  body.dark-theme {
+    background-color: #222;
+    color: white;
+  }
+  
+  body.dark-theme .toggle-theme-button {
+    background-color: #888;
+    color: black;
+  }
+  
+  body.dark-theme .social-icons li a:hover {
+    color: #bbb;
+  }
+  

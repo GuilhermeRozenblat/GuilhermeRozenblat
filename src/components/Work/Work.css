@@ -1,0 +1,541 @@
+.work-section {
+  padding: 80px 10px 0px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  background-color: #06080c;
+
+ /* Centraliza o background */
+}
+
+.section-title {
+  font-size: 3.0em;
+  margin-bottom: 60px;
+  color: #ffffff;
+  font-family: "NeueMachinaLight";
+  justify-content: flex-start;
+}
+
+.work-card {
+  justify-content: center;
+  align-items: center;
+  width: 95vw;
+  
+}
+
+.topo {
+  width: 80%;
+  display: flex;
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.topo img {
+  width: 70px;
+  height: 70px;
+  filter: drop-shadow(2px 4px 4px rgba(0, 0, 0, 0.66));
+}
+
+.topo .titulo-proj {
+  padding-left: 20px;
+  text-align: start;
+}
+
+.topo .titulo-proj h1 {
+  color: white;
+  margin: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.topo .titulo-proj p {
+  color: rgb(211, 211, 211);
+  margin: 0;
+  font-weight: 200;
+  font-size: 16px;
+}
+
+/* Configurações para a área 'meio' */
+.meio {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.galeria-total {
+  flex: 2;
+  max-width: 66%;
+}
+
+/* Carrossel de imagens */
+.gallery {
+  padding-top: 70px;
+  padding-bottom: 40px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2D266C;
+  border-radius: 15px;
+  width: 100%; 
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin-bottom: 12px; 
+  text-align: center;
+  overflow: hidden;
+}
+
+.gallery-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-image {
+  min-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.5s ease;
+}
+
+.hidden {
+  display: none;
+}
+
+.gallery-btn {
+  position: absolute;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+.prev-btn {
+  left: 1rem;
+}
+
+.next-btn {
+  right: 1rem;
+}
+
+.gallery-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Indicadores do carrossel */
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(105, 105, 105, 0.973);
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.active-indicator {
+  background-color: #fefefe;
+  box-shadow: 0 0 10px #486DFF;
+}
+
+.indicator:hover {
+  background-color: lightgrey;
+}
+
+/* Descrição do projeto */
+.work-description {
+  padding-top: 20px;
+  width: 100%;
+  padding-left: 20vw;
+  padding-right:20vw;
+  color: white;
+  justify-content: center;
+  align-items: center;  
+  font-family: 'NeueMachinalight';
+  
+  text-align: justify;
+  letter-spacing: 0.01em;
+  
+}
+
+.work-description span {
+  color: #6a88ff;
+}
+
+.description{
+  
+  text-indent: 2em;
+  font-size: 1.2em;
+}
+
+.work-description p {
+  font-size: 0.9em;
+  color: #ffffff;
+  margin-top: 0;
+  font-weight: 200;
+  
+  line-height: 1.5;
+  
+}
+
+
+/* Estilos para o grid das tecnologias */
+.techs {
+  display: flex; /* Duas colunas de largura igual */
+  grid-template-rows: repeat(1, 1fr); /* Duas linhas de altura igual */
+  /* Espaçamento entre os itens do grid */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  margin-top: 40px;
+  gap: 30px;
+  justify-content: center;
+  
+  
+  
+}
+
+.tech {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-logo {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
+  filter: drop-shadow(2px 4px 4px rgb(0, 0, 0));
+}
+
+.tech p {
+  font-size: 13px;
+  margin-bottom: 0;
+  color: white;
+}
+
+
+.more-info-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.more-info-btn {
+  background-color: #486dffda;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.559);
+  transition: ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.more-info-btn:hover {
+  transform: scale(1.08);
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  margin-top: 2px;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.down-arrow {
+  border-top: 10px solid white;
+}
+
+.up-arrow {
+  border-bottom: 10px solid white;
+}
+
+.extra-info-card {
+  background-color: #151515;
+  margin-top: -10px;
+  border-radius: 12px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 70vw;
+  max-width: 1100px;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 60px;
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 2px 8px 12px rgba(0, 0, 0, 0.3);
+  
+
+}
+
+.features{
+  margin-top: 40px;
+  text-align: start;
+  
+
+}
+.features h4{
+  font-weight: 400;
+  font-size: 18px;
+  
+  
+}
+.features ul{
+  padding-left: 20px;
+
+  
+  
+}
+
+.extra-info-card ul {
+  list-style: none; /* Remove o estilo de lista padrão */
+  font-weight: 300;
+  font-size: 15px;
+   /* Espaço para a seta */
+}
+
+.features li {
+  list-style: none;
+  margin-top: 15px;
+  position: relative; 
+  color: rgb(221, 221, 221);/* Necessário para posicionar a seta */
+  font-size: 13px;
+  
+}
+
+.features li::before {
+  content: '✔'; /* Símbolo de tick */
+  position: absolute;
+  left: -20px; /* Posiciona o ícone à esquerda do item */
+  top: 0; /* Centraliza verticalmente */
+  color: rgb(4, 49, 170); /* Cor do tick */
+  font-size: 13px; /* Tamanho do tick */
+}
+
+
+
+.extra-info-card img{
+  height: 80px;
+  border-radius: 12px;
+  margin-top: 80px;
+  margin-right: 60px;
+  filter: drop-shadow(2px 4px 12px rgba(0, 0, 0, 0.5));
+  
+}
+
+
+.container-animation {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; /* Ajuste da altura do container para ser 80% da altura da viewport */
+  width: 95vw;  /* Ajuste da largura do container para ser 80% da largura da viewport */
+  /* Largura máxima */
+  margin: 0; /* Centraliza horizontalmente */
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.img1 {
+  position: absolute;
+  height: 80%; /* Ocupa 100% da altura do container */
+  left: 50%;
+  z-index: 1;
+  /* Começa no centro do container */
+  transition: transform 1s ease-out; /* Transição suave */
+}
+.img2 {
+  position: absolute;
+  height: 85%; /* Ocupa 100% da altura do container */
+  left: 50%;
+  z-index: 2;
+   /* Começa no centro do container */
+  transition: transform 1s ease-out; /* Transição suave */
+}
+.img3 {
+  position: absolute;
+  height: 100%; /* Ocupa 100% da altura do container */
+  left: 50%;
+  z-index: 3;
+   /* Começa no centro do container */
+  transition: transform 1s ease-out; /* Transição suave */
+}
+.img4 {
+  position: absolute;
+  height: 85%; /* Ocupa 100% da altura do container */
+  left: 50%;
+  z-index: 2;
+   /* Começa no centro do container */
+  transition: transform 1s ease-out; /* Transição suave */
+}
+.img5 {
+  position: absolute;
+  height: 80%; /* Ocupa 100% da altura do container */
+  left: 50%;
+  z-index: 1;
+   /* Começa no centro do container */
+  transition: transform 1s ease-out; /* Transição suave */
+}
+
+.img1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
+}
+.img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
+}
+.img3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
+}
+.img4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
+}
+.img5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transform: translateX(-50%);
+  filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
+}
+
+/* Classe que será ativada quando o elemento estiver visível */
+.animate1 {
+  transform: translateX(-30vw); /* Ajusta a animação para mover a imagem à esquerda, proporcional à largura da tela */
+}
+.animate2 {
+  transform: translateX(calc(-15vw)); /* Ajusta a animação para mover a imagem à esquerda, proporcional à largura da tela */
+}
+.animate3 {
+  transform: scale(0.95); /* Ajusta a animação para mover a imagem à esquerda, proporcional à largura da tela */
+}
+
+/* Media Queries para ajustar o tamanho em telas menores */
+@media (max-width: 768px) {
+  .container-animation {
+    height: 60vh; /* Diminui a altura em telas menores */
+    width: 100vw;  /* Aumenta a largura para 90% da tela */
+  }
+  .work-card{
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .work-section{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .work-description{
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: start;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .container-animation {
+
+    height: 40vh; /* Ainda menor para telas muito pequenas */
+    width: 100vw; /* Ocupa toda a largura da tela */
+  }
+  .work-card{
+    width: 100vw;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .work-section{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .topo{
+    align-items: center;
+  }
+  .topo .titulo-proj h1 {
+    padding-top: 0;
+    padding-bottom: 2px;
+    font-size: 1.1em;
+  }
+  .topo .titulo-proj p {
+    font-size: 0.9em;
+  }
+  .topo img{
+    width: 60px;
+    height: 60px;
+  }
+  .meio{
+    width: 100vw;
+  }
+  .work-description{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: start;
+    font-size: 0.9em;
+  }
+  .techs{
+    gap: 10px;
+  }
+
+}
+
+/* ANIMATE4 - completar*/
+.animate4 {
+  transform: translateX(15vw); /* Ajusta a animação para mover a imagem à esquerda, proporcional à largura da tela */
+}
+/* ANIMATE5 - completar */
+.animate5 {
+  transform: translateX(30vw); /* Ajusta a animação para mover a imagem à esquerda, proporcional à largura da tela */
+}
+
+
+
+
+
+
+
+
+
+
+

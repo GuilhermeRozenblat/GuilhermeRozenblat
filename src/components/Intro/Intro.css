@@ -1,0 +1,92 @@
+.intro-container {
+  padding-top: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    
+    
+  }
+  
+  .intro-container h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 42px;
+    color: white;
+    
+  }
+  
+  .intro-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+   
+    width: 80%;
+    height: 100%;
+    align-items: center; /* Centraliza verticalmente todos os itens da grid */
+    
+  }
+  
+  .intro-name {
+    grid-column: 1 ;
+    grid-row: 1;
+    align-self: center; /* Centraliza verticalmente o texto dentro de sua célula */
+  }
+  .intro-title {
+    margin-top: 120px;
+    grid-column: 1 ;
+    grid-row: 3;
+    align-self: center; /* Centraliza verticalmente o texto dentro de sua célula */
+  }
+  
+  .intro-icon {
+    font-size: 24px;
+    justify-self: center; /* Centraliza horizontalmente o ícone */
+  }
+  
+  .search-icon {
+    grid-column: 2;
+    grid-row: 1;
+  }
+  
+  .intro-description {
+    margin-top: 100px;
+    grid-column: 2;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px; /* Centraliza horizontalmente o conteúdo */
+  }
+  
+  
+  .laptop-icon, .map-icon {
+    margin-right: 10px;
+  }
+  
+  .intro-icons {
+    margin-top: 100px;
+    grid-column: 2;
+    grid-row: 3;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente os ícones na coluna */
+  }
+  
+  .mobile-icon, .laptop-icon {
+    margin-left: 10px;
+  }
+  
+  .intro-icons1{
+    margin-top: 100px;
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 100%; /* Certifica-se de ocupar toda a altura da célula */
+  }
+  
+ 
