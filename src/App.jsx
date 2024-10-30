@@ -1,6 +1,6 @@
 import "./App.css";
 import Topnavbar from "./components/navbar/Topnavbar";
-import Hero from "./components/Hero/Hero";
+
 import Work from "./components/Work/Work";
 import About from "./components/About/About";
 import Home from "./components/home/Home";
