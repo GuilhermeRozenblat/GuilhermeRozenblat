@@ -2,81 +2,92 @@
 .home {
     position: relative;
     width: 100%;
-    height: var(--app-height); /* Altura dinâmica para excluir a barra de navegação */
+    height: var(--app-height);
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-}
-
-.background-video {
+  }
+  
+  .main-container {
+    position: relative;
+    width: 100%;
+    height: var(--app-height);
+  }
+  
+  .background-video,
+  .content {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: var(--app-height); /* Altura dinâmica para o vídeo de fundo */
+    height: var(--app-height);
     object-fit: cover;
-}
-
-.content {
-    position: absolute;
-    width: 100%;
-    height: var(--app-height); /* Altura dinâmica para conteúdo sobre o vídeo */
+  }
+  
+  .background-video {
+    z-index: 1;
+  }
+  
+  .content {
     background-color: #eb58ffe1;
     mix-blend-mode: luminosity;
-}
-
-.content2 {
+    z-index: 2;
+  }
+  
+  .content2 {
     position: absolute;
     width: 100%;
-    height: var(--app-height); /* Altura dinâmica para content2 */
+    height: var(--app-height);
     text-align: left;
-    font-size: 7.5vw;
+    font-size: 7.0vw;
     font-family: "NeueMachinaLight";
     font-weight: 100;
     display: flex;
     align-items: flex-end;
     justify-content: flex-start;
-    padding: 0 0 5px 20px;
-}
-
-.text1 {
-    position: static;
-    transform: none;
+    padding: 0 0 5px 5px;
+    z-index: 3;
+  }
+  
+  .text1 {
     line-height: 0.1;
     color: #000000;
-    z-index: 10;
-}
-
-h1 {
+  }
+  
+  .sobrenome{
+    color: #000000;
+  }
+  h1 {
     margin-bottom: 90px;
-}
-
-h2 {
+  }
+  
+  h2 {
     padding-left: 8px;
     font-size: 2.5vw;
     margin-top: 10px;
-}
-
-/* Estilos Responsivos */
-@media (max-width: 768px) {
+  }
+  
+  /* Estilos Responsivos */
+  @media (max-width: 768px) {
     h1 {
-        font-size: 16vw;
+      font-size: 16vw;
     }
-
+  
     h2 {
-        font-size: 5vw;
+      font-size: 5vw;
     }
-}
-
-@media (max-width: 480px) {
+  }
+  
+  @media (max-width: 480px) {
     h1 {
-        margin-bottom: 40px;
-        font-size: 16vw;
+      margin-bottom: 40px;
+      font-size: 16vw;
     }
-
+  
     h2 {
-        font-size: 6vw;
-        padding-left: 0px;
+      font-size: 6vw;
+      padding-left: 0px;
     }
-}
+  }
+  

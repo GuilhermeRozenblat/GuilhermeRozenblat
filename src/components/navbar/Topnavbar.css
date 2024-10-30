@@ -172,6 +172,10 @@ span {
   opacity: 0;
 }
 
+.top-nav-bar-sobrenome{
+  color: white;
+}
+
 @keyframes pulsate {
   0% {
     transform: scale(0.1, 0.1);

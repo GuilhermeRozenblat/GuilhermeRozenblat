@@ -48,7 +48,7 @@ const Topnavbar = () => {
               <img src={GuiProfile} alt="Profile" />
               <div className="logo-name">
                 <h1>Guilherme</h1>
-                <h1>Rozenblat</h1>
+                <h1><span className="top-nav-bar-sobrenome" translate="no">Rozenblat</span></h1>
               </div>
             </button>
           </div>

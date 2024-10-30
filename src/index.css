@@ -1,0 +1,9 @@
+html {
+    /* Esta cor será aplicada à barra de navegação do sistema */
+    background-color: #000;
+}
+
+body {
+    min-height: 100vh;
+    padding-bottom: env(safe-area-inset-bottom); /* Compatível com dispositivos com barra de navegação */
+}
