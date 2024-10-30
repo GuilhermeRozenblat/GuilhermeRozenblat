@@ -4,8 +4,7 @@ import Hero from "./components/Hero/Hero";
 import Work from "./components/Work/Work";
 import About from "./components/About/About";
 import Home from "./components/home/Home";
-import { useRef } from "react";
-import Intro from "./components/Intro/Intro";
+
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import Contact from "./components/Contact/Contact";
 import "./fonts/PPNeueMachina-InktrapLight.otf";
