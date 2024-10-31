@@ -147,17 +147,21 @@ span {
 /* Animação do círculo de notificação */
 .ring-container {
   position: relative;
-  align-content: center;
-  padding-right: 0.5em;
+  display: flex;
+  align-items: center;
+
+  padding-right: 14px;
 }
 
 .circle {
+  position: absolute;
   width: 11px;
   height: 11px;
   background-color: #62bd19;
-  border-radius: 50%;
-  top: 4px;
-  left: 4px;
+  border-radius: 30px;
+  top: 5px;
+  left: 0px;
+ 
 }
 
 .ringring {

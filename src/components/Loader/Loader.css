@@ -45,7 +45,7 @@
   .greeting-0 {
     position: absolute;
     opacity: 0;
-    animation: fadeIn 1.4s;
+    animation: fadeIn 1.35s;
 }
 .greeting-1 {
     position: absolute;
