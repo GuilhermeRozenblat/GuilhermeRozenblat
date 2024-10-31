@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./Home.css";
-import video4 from "../../assets/video4.mp4";
+
 import video4new2 from "../../assets/video4new2.mp4";
 
 function Home() {
