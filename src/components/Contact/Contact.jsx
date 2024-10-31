@@ -3,13 +3,13 @@ import { FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
-import video4 from "../../assets/video4.mp4";
+import video4new2 from "../../assets/video4new2.mp4";
 
 const Contact = () => {
   return (
     <section id="contact" className="contact-section">
-      <video autoPlay loop muted className="background-video-contact">
-        <source src={video4} type="video/mp4" />
+      <video autoPlay loop muted playsInline className="background-video-contact">
+        <source src={video4new2} type="video/mp4" />
       </video>
       <div className="filter-contact"></div>
       <h1 className="section-title-contact">Contact.</h1>

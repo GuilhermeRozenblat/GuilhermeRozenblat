@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import "./Home.css";
 import video4 from "../../assets/video4.mp4";
+import video4new2 from "../../assets/video4new2.mp4";
 
 function Home() {
   useEffect(() => {
@@ -21,14 +22,18 @@ function Home() {
     <section id="home" className="home">
       <div className="main-container">
         <video autoPlay loop muted playsInline className="background-video">
-          <source src={video4} type="video/mp4" />
+          <source src={video4new2} type="video/mp4" />
         </video>
         <div className="content"></div>
       </div>
       <div className="content2">
         <div className="text1">
           <h1>Guilherme</h1>
-          <h1><span className="sobrenome" translate="no">Rozenblat</span></h1>
+          <h1>
+            <span className="sobrenome" translate="no">
+              Rozenblat
+            </span>
+          </h1>
           <h2 className="text2">Full-Stack Developer</h2>
         </div>
       </div>

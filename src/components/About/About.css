@@ -57,7 +57,7 @@
 }
 
 .textos span {
-  color: #e4b191;
+  color: #f0b68c;
 }
 
 .imagem {
@@ -168,6 +168,9 @@
   .botoes button {
       padding: 0 15px;
   }
+  .baixo{
+    padding-top: 15px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -193,6 +196,7 @@
   .botoes {
       flex-direction: column;
       gap: 15px;
+      margin-top: 20px;
   }
 
   .botoes button {

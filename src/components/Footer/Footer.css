@@ -43,11 +43,12 @@
   
   .footer-info p {
     color: #ffffff;
-    margin: 0 15px 5px;
-    font-size: 13px;
+    margin: 0 5px 5px;
+    font-size: 12px;
     transition: color 0.3s ease;
     font-family: "NeueMachinaLight";
     text-align: start;
+    
     
 
   }

@@ -402,7 +402,6 @@
 }
 
 .img1 img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
@@ -410,7 +409,6 @@
   filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
 }
 .img2 img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
@@ -418,7 +416,6 @@
   filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
 }
 .img3 img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
@@ -426,7 +423,6 @@
   filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
 }
 .img4 img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
@@ -434,7 +430,6 @@
   filter: drop-shadow(4px 12px 12px rgba(0, 0, 0, 0.925));
 }
 .img5 img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 12px;
@@ -456,7 +451,7 @@
 /* Media Queries para ajustar o tamanho em telas menores */
 @media (max-width: 768px) {
   .container-animation {
-    height: 60vh; /* Diminui a altura em telas menores */
+    height: 60dvh; /* Diminui a altura em telas menores */
     width: 100vw;  /* Aumenta a largura para 90% da tela */
   }
   .work-card{
@@ -478,7 +473,7 @@
 @media (max-width: 480px) {
   .container-animation {
 
-    height: 40vh; /* Ainda menor para telas muito pequenas */
+    height: 40dvh; /* Ainda menor para telas muito pequenas */
     width: 100vw; /* Ocupa toda a largura da tela */
   }
   .work-card{
