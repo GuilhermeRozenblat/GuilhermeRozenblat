@@ -30,21 +30,17 @@ import { FaTools } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { SiFramework } from "react-icons/si";
 
-
-
 import c from "../../assets/c.png";
 
 const Skills = () => {
   return (
     <section id="skills" className="skills-section">
       <h1 className="section-title">Skills.</h1>
-      <div class="parent">
-        <div class="div1">
-
+      <div className="parent">
+        <div className="div1">
           <div className="subtitle">
             <div className="iconsubtitle">
-            <FaCode />
-
+              <FaCode />
             </div>
             <div className="textsubtitle">
               <h2>Programming <br /> Languages</h2>
@@ -56,47 +52,45 @@ const Skills = () => {
                 <div className="icontech">
                   <FaPython />
                 </div>
-                <p>Python</p>
+                <p className="notranslate">Python</p>
               </li>
               <li>
                 <div className="icontech">
                   <SiDart />
                 </div>
-                <p>Dart</p>
+                <p className="notranslate">Dart</p>
               </li>
               <li>
                 <div className="icontech">
                   <RiJavascriptFill />
                 </div>
-                <p>JavaScript</p>
+                <p className="notranslate">JavaScript</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaHtml5 />
                 </div>
-                <p>HTML</p>
+                <p className="notranslate">HTML</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaJava />
                 </div>
-                <p>Java</p>
+                <p className="notranslate">Java</p>
               </li>
               <li>
                 <div className="icontech">
                   <img src={c} alt="c" />
                 </div>
-                <p>C</p>
+                <p className="notranslate">C</p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="div2">
-        <div className="subtitle">
+        <div className="div2">
+          <div className="subtitle">
             <div className="iconsubtitle">
-            <SiFramework />
-
-
+              <SiFramework />
             </div>
             <div className="textsubtitle">
               <h2>Technologies & <br /> Frameworks</h2>
@@ -108,47 +102,45 @@ const Skills = () => {
                 <div className="icontech">
                   <SiFlutter />
                 </div>
-                <p>Flutter</p>
+                <p className="notranslate">Flutter</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaReact />
                 </div>
-                <p>React</p>
+                <p className="notranslate">React</p>
               </li>
               <li>
                 <div className="icontech">
                   <SiNestjs />
                 </div>
-                <p>NestJS</p>
+                <p className="notranslate">NestJS</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaDocker />
                 </div>
-                <p>Docker</p>
+                <p className="notranslate">Docker</p>
               </li>
               <li>
                 <div className="icontech">
                   <SiPostman />
                 </div>
-                <p>Postman</p>
+                <p className="notranslate">Postman</p>
               </li>
               <li>
                 <div className="icontech">
-                <DiAndroid />
-
+                  <DiAndroid />
                 </div>
-                <p>Android Studio</p>
+                <p className="notranslate">Android Studio</p>
               </li>
             </ul>
           </div>
         </div>
-        <div class="div3">
-        <div className="subtitle">
+        <div className="div3">
+          <div className="subtitle">
             <div className="iconsubtitle">
-            <FaDatabase />
-
+              <FaDatabase />
             </div>
             <div className="textsubtitle">
               <h2>Databases</h2>
@@ -160,31 +152,31 @@ const Skills = () => {
                 <div className="icontech">
                   <IoLogoFirebase />
                 </div>
-                <p>Firebase</p>
+                <p className="notranslate">Firebase</p>
               </li>
               <li>
                 <div className="icontech">
                   <RiSupabaseFill />
                 </div>
-                <p>Supabase</p>
+                <p className="notranslate">Supabase</p>
               </li>
               <li>
                 <div className="icontech">
                   <PiFileSqlDuotone />
                 </div>
-                <p>SQL</p>
+                <p className="notranslate">SQL</p>
               </li>
               <li>
                 <div className="icontech">
                   <GrMysql />
                 </div>
-                <p>MySQL</p>
+                <p className="notranslate">MySQL</p>
               </li>
               <li>
                 <div className="icontech">
                   <SiPostgresql />
                 </div>
-                <p>PostgreSQL</p>
+                <p className="notranslate">PostgreSQL</p>
               </li>
               <li>
                 <div className="icontech">
@@ -195,11 +187,10 @@ const Skills = () => {
             </ul>
           </div>
         </div>
-        <div class="div4">
+        <div className="div4">
           <div className="subtitle">
             <div className="iconsubtitle">
-            <FaTools />
-
+              <FaTools />
             </div>
             <div className="textsubtitle">
               <h2>Tools & Platforms</h2>
@@ -211,52 +202,49 @@ const Skills = () => {
                 <div className="icontech">
                   <SiPowerbi />
                 </div>
-                <p>Power BI</p>
+                <p className="notranslate">Power BI</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaFileExcel />
                 </div>
-                <p>Excel
-                </p>
+                <p className="notranslate">Excel</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaFilePowerpoint />
                 </div>
-                <p>PowerPoint</p>
+                <p className="notranslate">PowerPoint</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaFileWord />
                 </div>
-                <p>Word</p>
+                <p className="notranslate">Word</p>
               </li>
-              
               <li>
                 <div className="icontech">
                   <SiAdobephotoshop />
                 </div>
-                <p>Photoshop</p>
+                <p className="notranslate">Photoshop</p>
               </li>
               <li>
                 <div className="icontech">
                   <SiJira />
                 </div>
-                <p>Jira</p>
+                <p className="notranslate">Jira</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaTrello />
                 </div>
-                <p>Trello</p>
+                <p className="notranslate">Trello</p>
               </li>
               <li>
                 <div className="icontech">
                   <FaGooglePlay />
                 </div>
-                <p>Google Play Console
-                </p>
+                <p className="notranslate">Google Play Console</p>
               </li>
             </ul>
           </div>
