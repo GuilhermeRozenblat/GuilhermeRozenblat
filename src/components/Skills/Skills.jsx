@@ -1,4 +1,4 @@
-import React from "react";
+
 import "./Skills.css";
 import { FaPython } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
@@ -8,7 +8,6 @@ import { FaJava } from "react-icons/fa";
 import { IoLogoFirebase } from "react-icons/io5";
 import { RiSupabaseFill } from "react-icons/ri";
 import { GrMysql } from "react-icons/gr";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { PiFileSqlDuotone } from "react-icons/pi";
 import { FaDatabase } from "react-icons/fa";
 import { SiPostgresql } from "react-icons/si";
@@ -29,6 +28,8 @@ import { FaTrello } from "react-icons/fa";
 import { FaTools } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { SiFramework } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
+
 
 import c from "../../assets/c.png";
 
@@ -112,9 +113,15 @@ const Skills = () => {
               </li>
               <li>
                 <div className="icontech">
+                <FaNodeJs />
+                </div>
+                <p className="notranslate">NodeJs</p>
+              </li>
+              <li>
+                <div className="icontech">
                   <SiNestjs />
                 </div>
-                <p className="notranslate">NestJS</p>
+                <p className="notranslate">NestJs</p>
               </li>
               <li>
                 <div className="icontech">

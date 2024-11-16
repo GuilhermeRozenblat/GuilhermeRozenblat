@@ -1,4 +1,3 @@
-import React from "react";
 import "./About.css"; // Estilos separados para a seção
 import { LuDownload } from "react-icons/lu";
 import { LuExternalLink } from "react-icons/lu";
@@ -21,8 +20,11 @@ const About = () => {
                   <p>
                     I am a <span>Computer Science</span> student at the
                     Universidade Federal Fluminense (UFF) and work in software
-                    development, particularly in <span>cross-platform applications and
-                    data-driven technology solutions.</span>
+                    development, particularly in{" "}
+                    <span>
+                      cross-platform applications and data-driven technology
+                      solutions.
+                    </span>
                   </p>
                 </div>
                 <div className="texto">
@@ -30,11 +32,12 @@ const About = () => {
                     I am involved in the entire software development lifecycle,
                     from conception to implementation, maintenance, and database
                     creation. I develop
-                    <span> Mobile </span> and <span>Web</span> applications using technologies
-                    such as
+                    <span> Mobile </span> and <span>Web</span> applications
+                    using technologies such as
                     <span> Flutter</span>,<span> React</span>,
-                    <span> Firebase</span>,<span> NestJS</span>, and
-                    <span> PostgreSQL</span>.
+                    <span> Firebase</span>,<span> NodeJS</span>,
+                    <span> NestJS</span>, and
+                    <span> SQL databases</span>.
                   </p>
                 </div>
                 <div className="texto">
