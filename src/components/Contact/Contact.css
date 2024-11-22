@@ -50,11 +50,12 @@
   margin: 20px 0 30px;
   align-items: center;
   gap: 10px;
-  
+  border-radius: 12px;
   color: white;
   border: none;
   background-color: transparent;
 }
+
 
 .botao-contact a {
   text-decoration: none;
@@ -78,13 +79,13 @@
 .box:after {
   content: "";
   position: absolute;
-  top: -9px;
+  top: -9.5px;
   left: 50%;
   transform: translateX(-50%) rotate(225deg);
   border-width: 10px;
   border-style: solid;
   border-color: transparent #ffffff4b #ffffff4b transparent;
- 
+  
 }
 
 .botao-contact p {

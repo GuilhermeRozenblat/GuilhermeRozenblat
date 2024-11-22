@@ -2,7 +2,7 @@ import "./About.css"; // Estilos separados para a seção
 import { LuDownload } from "react-icons/lu";
 import { LuExternalLink } from "react-icons/lu";
 import GuiAbout from "../../assets/guifotoaboutcut3.jpg";
-import GuilhermeCV from "../../assets/GuilhermeRozenblat-CV-EN.pdf";
+import GuilhermeCV from "../../assets/Guilherme Rozenblat - CV - EN.pdf";
 
 const About = () => {
   return (
@@ -52,7 +52,7 @@ const About = () => {
               <div className="botoes">
                 <button className="btn">
                   <a
-                    href="https://drive.google.com/file/d/1QXdxQh6yaYPVw9VCG_lWdTqAVq0rmCCv/view?usp=sharing"
+                    href="https://docs.google.com/document/d/1-1Izyfy08Zo-bAl1r0wsJ8ENN3Lkx_IxJwTtwc3uIMY/edit?usp=sharing"
                     target="_blank"
                   >
                     <p>Online CV</p>
