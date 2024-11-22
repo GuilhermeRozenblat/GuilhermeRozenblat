@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import "./Work.css";
 import flutterLogo from "../../assets/fluttericon.png";
 import firebaseLogo from "../../assets/firebase.png";
 import AndroidStudioLogo from "../../assets/android-studio-icon.png";
 import PlayStoreLogo from "../../assets/icons8-google-play-144.png";
 import UPPESLogo from "../../assets/Uppes_logo_512x512.png";
-
 
 import img1 from "../../assets/img1.jpg";
 import img2 from "../../assets/img2.jpg";
@@ -14,8 +13,6 @@ import img4 from "../../assets/img4.jpg";
 import img5 from "../../assets/img5.jpg";
 
 const Work = () => {
-  
-
   const containerRef = useRef(null); // Referência para o container-animation
 
   useEffect(() => {
@@ -153,16 +150,15 @@ const Work = () => {
             </div>
 
             <div className="techs">
-              <div className="tech">
+              <div className="tech notranslate">
                 <img src={flutterLogo} alt="Flutter" className="tech-logo" />
                 <p>Flutter</p>
               </div>
-              <div className="tech">
+              <div className="tech notranslate">
                 <img src={firebaseLogo} alt="Firebase" className="tech-logo" />
                 <p>Firebase</p>
               </div>
-
-              <div className="tech">
+              <div className="tech notranslate">
                 <img
                   src={AndroidStudioLogo}
                   alt="Android Studio"
@@ -170,7 +166,7 @@ const Work = () => {
                 />
                 <p>Android Studio</p>
               </div>
-              <div className="tech">
+              <div className="tech notranslate">
                 <img
                   src={PlayStoreLogo}
                   alt="Google Play"
@@ -180,25 +176,24 @@ const Work = () => {
               </div>
             </div>
             <div className="features">
-            <ul>
-              <li>Real time Database</li>
-              <li>Users can Read, Write, Update and Delete items</li>
-              <li>QR code scanner to register new items with unique ID</li>
-              <li>Search and filter items in the catalog</li>
-              <li>Create and share PDF files</li>
-              <li>
-                Admin users can manage, create, promote and delete their
-                employees
-              </li>
-              <li>
-                Firebase database, authentication with email and password and
-                app hosting
-              </li>
-              <li>Available on Play Store and Web</li>
-            </ul>
+              <ul>
+                <li>Real time Database</li>
+                <li>Users can Read, Write, Update and Delete items</li>
+                <li>QR code scanner to register new items with unique ID</li>
+                <li>Search and filter items in the catalog</li>
+                <li>Create and share PDF files</li>
+                <li>
+                  Admin users can manage, create, promote and delete their
+                  employees
+                </li>
+                <li>
+                  Firebase database, authentication with email and password and
+                  app hosting
+                </li>
+                <li>Available on Play Store and Web</li>
+              </ul>
+            </div>
           </div>
-          </div>
-          
         </div>
 
         {/*     

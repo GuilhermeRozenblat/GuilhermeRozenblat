@@ -1,6 +1,5 @@
-import React from "react";
 import "./Intro.css";
-import { FaMobile, FaLaptop, FaMapPin, FaSearch } from "react-icons/fa";
+import { FaMobile } from "react-icons/fa";
 import { IoPerson } from "react-icons/io5";
 import { IoIosPin } from "react-icons/io";
 import { FaUserGraduate } from "react-icons/fa6";
@@ -15,7 +14,7 @@ function Intro() {
         <div className="linha1">
           
         </div>
-        <h1 className="intro-name">I'm Guilherme Rozenblat.</h1>
+        <h1 className="intro-name">Im Guilherme Rozenblat.</h1>
         <IoPerson className="intro-icon search-icon" />
 
         <div className="intro-icons1">

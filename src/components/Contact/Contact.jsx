@@ -1,15 +1,55 @@
 import "./Contact.css";
+import { useEffect, useState } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
 import { SiMinutemailer } from "react-icons/si";
 import video4new2 from "../../assets/video4new2.mp4";
+import video4new2v3 from "../../assets/video4new2v3.mp4";
 
 const Contact = () => {
+  const [videoSrc, setVideoSrc] = useState(video4new2); // Padrão para desktop
+
+  useEffect(() => {
+    // Detecta o tamanho da tela e ajusta a fonte de vídeo
+    const selectVideoSource = () => {
+      if (window.innerWidth <= 768) {
+        setVideoSrc(video4new2v3); // Versão de baixa resolução para mobile
+      } else {
+        setVideoSrc(video4new2); // Versão de alta resolução para desktop
+      }
+    };
+
+    selectVideoSource(); // Configura o vídeo na carga inicial
+    window.addEventListener("resize", selectVideoSource);
+
+    return () => window.removeEventListener("resize", selectVideoSource);
+  }, []);
+
+  useEffect(() => {
+    // Ajusta a altura da aplicação para excluir a barra de navegação em dispositivos móveis
+    const setAppHeight = () => {
+      const doc = document.documentElement;
+      doc.style.setProperty("--app-height", `${window.innerHeight}px`);
+    };
+
+    // Define a altura ao carregar a página e redimensionar a tela
+    setAppHeight();
+    window.addEventListener("resize", setAppHeight);
+
+    return () => window.removeEventListener("resize", setAppHeight);
+  }, []);
   return (
     <section id="contact" className="contact-section">
-      <video autoPlay loop muted playsInline className="background-video-contact">
-        <source src={video4new2} type="video/mp4" />
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        preload="auto"
+        className="background-video-contact"
+      >
+        <source src={videoSrc} type="video/mp4" />
       </video>
       <div className="filter-contact"></div>
       <h1 className="section-title-contact">Contact.</h1>

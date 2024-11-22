@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./Home.css";
 import video4new2 from "../../assets/video4new2.mp4";
 import video4new2v3 from "../../assets/video4new2v3.mp4";

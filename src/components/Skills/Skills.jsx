@@ -1,4 +1,3 @@
-
 import "./Skills.css";
 import { FaPython } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
@@ -29,6 +28,7 @@ import { FaTools } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import { SiFramework } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
 
 
 import c from "../../assets/c.png";
@@ -44,7 +44,9 @@ const Skills = () => {
               <FaCode />
             </div>
             <div className="textsubtitle">
-              <h2>Programming <br /> Languages</h2>
+              <h2>
+                Programming <br /> Languages
+              </h2>
             </div>
           </div>
           <div className="container-items">
@@ -94,7 +96,9 @@ const Skills = () => {
               <SiFramework />
             </div>
             <div className="textsubtitle">
-              <h2>Technologies & <br /> Frameworks</h2>
+              <h2>
+                Technologies & <br /> Frameworks
+              </h2>
             </div>
           </div>
           <div className="container-items">
@@ -113,7 +117,7 @@ const Skills = () => {
               </li>
               <li>
                 <div className="icontech">
-                <FaNodeJs />
+                  <FaNodeJs />
                 </div>
                 <p className="notranslate">NodeJs</p>
               </li>
@@ -205,6 +209,12 @@ const Skills = () => {
           </div>
           <div className="container-items">
             <ul>
+              <li>
+                <div className="icontech">
+                  <FaFigma />
+                </div>
+                <p className="notranslate">Figma</p>
+              </li>
               <li>
                 <div className="icontech">
                   <SiPowerbi />
