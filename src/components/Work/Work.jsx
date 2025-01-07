@@ -6,55 +6,66 @@ import AndroidStudioLogo from "../../assets/android-studio-icon.png";
 import PlayStoreLogo from "../../assets/icons8-google-play-144.png";
 import UPPESLogo from "../../assets/Uppes_logo_512x512.png";
 
+import SYSLogo from "../../assets/syslogo.png";
+
+import reactLogo from "../../assets/react.png";
+import nodeLogo from "../../assets/node.png";
+import ExpressLogo from "../../assets/express.png";
+import mySqlLogo from "../../assets/mysql.png";
+
+/*UPPES*/
 import img1 from "../../assets/img1.jpg";
 import img2 from "../../assets/img2.jpg";
 import img3 from "../../assets/img3.jpg";
 import img4 from "../../assets/img4.jpg";
 import img5 from "../../assets/img5.jpg";
 
+/*SYS*/
+import sys1 from "../../assets/print1.png";
+import sys2 from "../../assets/print2.png";
+import sys3 from "../../assets/print3.jpg";
+import sys4 from "../../assets/print4.jpg";
+import sys5 from "../../assets/print5.jpg";
+
 const Work = () => {
   const containerRef = useRef(null); // Referência para o container-animation
 
   useEffect(() => {
+    const containers = document.querySelectorAll(".container-animation");
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const img1 = entry.target.querySelector(".img1");
-          const img2 = entry.target.querySelector(".img2");
-          const img3 = entry.target.querySelector(".img3");
-          const img4 = entry.target.querySelector(".img4");
-          const img5 = entry.target.querySelector(".img5");
+          const imgs = entry.target.querySelectorAll(
+            ".img1, .img2, .img3, .img4, .img5"
+          );
           if (entry.isIntersecting) {
-            // Ativar a animação quando o container estiver visível
-            img1.classList.add("animate1");
-            img2.classList.add("animate2");
-            img3.classList.add("animate3");
-            img4.classList.add("animate4");
-            img5.classList.add("animate5");
+            // Ativar as animações para as imagens visíveis
+            imgs.forEach((img, index) => {
+              img.classList.add(`animate${index + 1}`);
+            });
           } else {
-            // Remover a classe de animação quando o container sair de vista
-            img1.classList.remove("animate1");
-            img2.classList.remove("animate2");
-            img3.classList.remove("animate3");
-            img4.classList.remove("animate4");
-            img5.classList.remove("animate5");
+            // Remover as animações quando o container sair de vista
+            imgs.forEach((img, index) => {
+              img.classList.remove(`animate${index + 1}`);
+            });
           }
         });
       },
       {
-        threshold: 0.4, // Ativa a animação quando 50% do container está visível
+        threshold: 0.4, // Ativa a animação quando 40% do container está visível
       }
     );
 
-    const container = containerRef.current;
-    if (container) {
+    // Observar todos os containers de animação
+    containers.forEach((container) => {
       observer.observe(container);
-    }
+    });
 
     return () => {
-      if (container) {
+      containers.forEach((container) => {
         observer.unobserve(container);
-      }
+      });
     };
   }, []);
 
@@ -62,35 +73,36 @@ const Work = () => {
     <section id="work" className="work-section">
       <h2 className="section-title">Work.</h2>
 
-      <div className="topo">
-        <img src={UPPESLogo} alt="" />
-        <div className="titulo-proj">
-          <h1>UPPES Patrimônio</h1>
-          <p>Android and Web</p>
-        </div>
-      </div>
-      <div className="work-card">
-        <div className="container-animation" ref={containerRef}>
-          <div className="img1">
-            <img src={img1} alt="" />
-          </div>
-          <div className="img2">
-            <img src={img2} alt="" />
-          </div>
-          <div className="img3">
-            <img src={img3} alt="" />
-          </div>
-          <div className="img4">
-            <img src={img4} alt="" />
-          </div>
-          <div className="img5">
-            <img src={img5} alt="" />
+      <div className="uppesSection">
+        <div className="topo">
+          <img src={UPPESLogo} alt="" />
+          <div className="titulo-proj">
+            <h1>UPPES Patrimônio</h1>
+            <p>Android and Web</p>
           </div>
         </div>
+        <div className="work-card">
+          <div className="container-animation" ref={containerRef}>
+            <div className="img1">
+              <img src={img1} alt="" />
+            </div>
+            <div className="img2">
+              <img src={img2} alt="" />
+            </div>
+            <div className="img3">
+              <img src={img3} alt="" />
+            </div>
+            <div className="img4">
+              <img src={img4} alt="" />
+            </div>
+            <div className="img5">
+              <img src={img5} alt="" />
+            </div>
+          </div>
 
-        <div className="meio">
-          {/* Carrossel de imagens */}
-          {/* <div className="galeria-total">
+          <div className="meio">
+            {/* Carrossel de imagens */}
+            {/* <div className="galeria-total">
             <div className="gallery">
               <i
                 className="fas fa-chevron-left gallery-btn prev-btn"
@@ -135,68 +147,151 @@ const Work = () => {
             </div>
           </div> */}
 
-          {/* Descrição do projeto */}
-          <div className="work-description">
-            <div className="description">
-              <p>
-                A cross-platform <span>Web </span>and <span>Mobile </span>app
-                for asset cataloging, built with Flutter and Firebase, featuring
-                real-time database, QR code scanning for asset registration, and
-                search/filter capabilities. It includes PDF generation and an
-                admin panel for employee management. Firebase handles
-                authentication, data management, and hosting. Available on Play
-                Store and Web.
-              </p>
-            </div>
+            {/* Descrição do projeto */}
+            <div className="work-description">
+              <div className="description">
+                <p>
+                  A cross-platform <span>Web </span>and <span>Mobile </span>app
+                  for asset cataloging, built with <span>Flutter</span> and{" "}
+                  <span>Firebase</span>, featuring real-time database, QR code
+                  scanning for asset registration, and search/filter
+                  capabilities. It includes PDF generation and an admin panel
+                  for employee management. Firebase handles authentication, data
+                  management, and hosting. Available on Play Store and Web.
+                </p>
+              </div>
 
-            <div className="techs">
-              <div className="tech notranslate">
-                <img src={flutterLogo} alt="Flutter" className="tech-logo" />
-                <p>Flutter</p>
+              <div className="techs">
+                <div className="tech notranslate">
+                  <img src={flutterLogo} alt="Flutter" className="tech-logo" />
+                  <p>Flutter</p>
+                </div>
+                <div className="tech notranslate">
+                  <img
+                    src={firebaseLogo}
+                    alt="Firebase"
+                    className="tech-logo"
+                  />
+                  <p>Firebase</p>
+                </div>
+                <div className="tech notranslate">
+                  <img
+                    src={AndroidStudioLogo}
+                    alt="Android Studio"
+                    className="tech-logo"
+                  />
+                  <p>Android Studio</p>
+                </div>
+                <div className="tech notranslate">
+                  <img
+                    src={PlayStoreLogo}
+                    alt="Google Play"
+                    className="tech-logo"
+                  />
+                  <p>Google Play</p>
+                </div>
               </div>
-              <div className="tech notranslate">
-                <img src={firebaseLogo} alt="Firebase" className="tech-logo" />
-                <p>Firebase</p>
+              <div className="features">
+                <ul>
+                  <li>Real time Database</li>
+                  <li>Users can Read, Write, Update and Delete items.</li>
+                  <li>QR code scanner to register new items with unique ID.</li>
+                  <li>Search and filter items in the catalog.</li>
+                  <li>Create and share PDF files.</li>
+                  <li>
+                    Admin users can manage, create, promote and delete their
+                    employees.
+                  </li>
+                  <li>
+                    Firebase database, authentication with email and password
+                    and app hosting.
+                  </li>
+                  <li>Available on Play Store and Web.</li>
+                </ul>
               </div>
-              <div className="tech notranslate">
-                <img
-                  src={AndroidStudioLogo}
-                  alt="Android Studio"
-                  className="tech-logo"
-                />
-                <p>Android Studio</p>
-              </div>
-              <div className="tech notranslate">
-                <img
-                  src={PlayStoreLogo}
-                  alt="Google Play"
-                  className="tech-logo"
-                />
-                <p>Google Play</p>
-              </div>
-            </div>
-            <div className="features">
-              <ul>
-                <li>Real time Database</li>
-                <li>Users can Read, Write, Update and Delete items</li>
-                <li>QR code scanner to register new items with unique ID</li>
-                <li>Search and filter items in the catalog</li>
-                <li>Create and share PDF files</li>
-                <li>
-                  Admin users can manage, create, promote and delete their
-                  employees
-                </li>
-                <li>
-                  Firebase database, authentication with email and password and
-                  app hosting
-                </li>
-                <li>Available on Play Store and Web</li>
-              </ul>
             </div>
           </div>
         </div>
+      </div>
+      {/* SYS Section */}
+      <div className="sysSection">
+        <div className="topo">
+          <img src={SYSLogo} alt="" />
+          <div className="titulo-proj">
+            <h1>SyStudio</h1>
+            <p>Web Platform</p>
+          </div>
+        </div>
+        <div className="work-card">
+          <div className="container-animation" ref={containerRef}>
+            <div className="img1">
+              <img src={sys2} alt="" />
+            </div>
+            <div className="img2">
+              <img src={sys5} alt="" />
+            </div>
+            <div className="img3">
+              <img src={sys1} alt="" />
+            </div>
+            <div className="img4">
+              <img src={sys4} alt="" />
+            </div>
+            <div className="img5">
+              <img src={sys3} alt="" />
+            </div>
+          </div>
 
-        {/*     
+          <div className="meio">
+            <div className="work-description">
+              <div className="description">
+                <p>
+                  A <span>Web</span> app designed for a dance school, focusing
+                  on student and class management, built with <span>React</span>
+                  , <span>Node.js</span> and <span>MySQL</span>. Features
+                  include student tracking, real-time evaluations, generating
+                  certificates, and report cards with detailed assessments. It
+                  also supports role-based access and authentication via JWT,
+                  with React Context managing state. Designed to automate tasks
+                  in a dynamic, practical, and fast way.
+                </p>
+              </div>
+
+              <div className="techs">
+                <div className="tech notranslate">
+                  <img src={reactLogo} alt="React" className="tech-logo" />
+                  <p>React</p>
+                </div>
+                <div className="tech notranslate">
+                  <img src={nodeLogo} alt="Node.js" className="tech-logo" />
+                  <p>Node.js</p>
+                </div>
+                <div className="tech notranslate">
+                  <img src={ExpressLogo} alt="Express" className="tech-logo" />
+                  <p>Express.js</p>
+                </div>
+                <div className="tech notranslate">
+                  <img src={mySqlLogo} alt="Database" className="tech-logo" />
+                  <p>MySQL</p>
+                </div>
+              </div>
+              <div className="features">
+                <ul>
+                  <li>Management of students and classes.</li>
+                  <li>Registration and review of evaluations.</li>
+                  <li>Detailed performance reports.</li>
+                  <li>Secure login with JWT authentication.</li>
+                  <li>Permissions for teachers and administrators.</li>
+                  <li>Association of students to classes.</li>
+                  <li>Generation of certificates and report cards.</li>
+                  <li>Protected routes for restricted access.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/*     
         <div className="more-info-btn-container">
           <button className="more-info-btn" onClick={handleToggleMore}>
             {showMore ? "Show less" : "Show more"}
@@ -206,7 +301,6 @@ const Work = () => {
           </button>
         </div>
         */}
-      </div>
 
       {/* Card adicional com mais informações */}
       {/*

@@ -524,6 +524,26 @@
   transform: translateX(30vw); /* Ajusta a animação para mover a imagem à esquerda, proporcional à largura da tela */
 }
 
+.sysSection{
+  padding-top: 80px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.uppesSection{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.sysSection span{
+  color: #b589e8;
+}
+.sysSection li::before{
+  color: #b589e8;
+}
 
 
 
