@@ -6,7 +6,8 @@ function Loader() {
     const greetings = ["Hello", "Hola", "Bonjour", "こんにちは", "Привет", "Ciao", "안녕하세요", "Hallo", "你好", "Kia ora", "Ahoj", "Namaste", "Hej", "שלום", "Olá"];
 
   return (
-    <div className="loader-overlay">
+    
+    <section id="loader" className="loader-overlay">
       <div className="wave wave-1"></div>
       <div className="wave wave-2"></div>
       <div className="wave wave-3"></div>
@@ -17,7 +18,7 @@ function Loader() {
           </span>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
 

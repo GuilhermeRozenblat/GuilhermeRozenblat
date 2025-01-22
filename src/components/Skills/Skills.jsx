@@ -29,9 +29,11 @@ import { FaCode } from "react-icons/fa";
 import { SiFramework } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
-
+import { DiMsqlServer } from "react-icons/di";
 
 import c from "../../assets/c.png";
+import csharp from "../../assets/csharp.png";
+import dotnet from "../../assets/dotnet.svg";
 
 const Skills = () => {
   return (
@@ -68,6 +70,12 @@ const Skills = () => {
                   <RiJavascriptFill />
                 </div>
                 <p className="notranslate">JavaScript</p>
+              </li>
+              <li>
+                <div className="icontech">
+                  <img src={csharp} alt="c#" />
+                </div>
+                <p className="notranslate">C#</p>
               </li>
               <li>
                 <div className="icontech">
@@ -114,6 +122,12 @@ const Skills = () => {
                   <FaReact />
                 </div>
                 <p className="notranslate">React</p>
+              </li>
+              <li>
+                <div className="icontech">
+                  <img src={dotnet} alt="" />
+                </div>
+                <p className="notranslate">.NET</p>
               </li>
               <li>
                 <div className="icontech">
@@ -188,6 +202,12 @@ const Skills = () => {
                   <SiPostgresql />
                 </div>
                 <p className="notranslate">PostgreSQL</p>
+              </li>
+              <li>
+                <div className="icontech">
+                  <DiMsqlServer />
+                </div>
+                <p className="notranslate">SQLServer</p>
               </li>
               <li>
                 <div className="icontech">

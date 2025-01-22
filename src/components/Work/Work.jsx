@@ -73,7 +73,7 @@ const Work = () => {
     <section id="work" className="work-section">
       <h2 className="section-title">Work.</h2>
 
-      <div className="uppesSection">
+      <section id="uppes" className="uppesSection">
         <div className="topo">
           <img src={UPPESLogo} alt="" />
           <div className="titulo-proj">
@@ -212,9 +212,9 @@ const Work = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       {/* SYS Section */}
-      <div className="sysSection">
+      <section id="systudio" className="sysSection">
         <div className="topo">
           <img src={SYSLogo} alt="" />
           <div className="titulo-proj">
@@ -289,7 +289,7 @@ const Work = () => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/*     
         <div className="more-info-btn-container">

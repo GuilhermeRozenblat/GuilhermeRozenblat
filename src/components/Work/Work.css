@@ -545,6 +545,12 @@
   color: #b589e8;
 }
 
+.sysSection .topo img{
+  filter: drop-shadow(0 0 5px rgb(25, 25, 25));
+  border-radius: 12px;
+  
+}
+
 
 
 
