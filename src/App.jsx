@@ -9,28 +9,26 @@ import Home from "./components/home/Home";
 import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import Footer from "./components/Footer/Footer";
-import Loader from "./components/Loader/Loader"; 
+import Loader from "./components/Loader/Loader";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 import MouseTrail from "./components/MouseTrail/MouseTrail";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [activeSection, setActiveSection] = useState("home"); 
+  const [activeSection, setActiveSection] = useState("home");
   // ^ guardará qual section está em foco
 
   // Mapa de cores para cada section:
   const sectionColors = {
-    home:    "#171717FF",
-    uppes:   "#352C85FF",  
-    systudio:"#613A8EFF",
-    about:   "#A36B48FF",
-    skills:  "#FFFFFFB4",
+    home: "#171717FF",
+    uppes: "#352C85FF",
+    systudio: "#613A8EFF",
+    about: "#A36B48FF",
+    skills: "#FFFFFFB4",
     contact: "#171717FF",
-    footer:  "#FFFFFFFF",
+    footer: "#FFFFFFFF",
   };
-  
-  
 
   useEffect(() => {
     // Oculta o loader após um breve período
@@ -40,7 +38,7 @@ function App() {
 
   // Detectar qual <section> está aparecendo com IntersectionObserver
   useEffect(() => {
-    const sections = document.querySelectorAll("section"); 
+    const sections = document.querySelectorAll("section");
     // Pega todas as sections no DOM
 
     const observer = new IntersectionObserver(
@@ -73,9 +71,7 @@ function App() {
       */}
       <MouseTrail
         color={
-          isLoading
-            ? "#FFFFFF" 
-            : sectionColors[activeSection] || "#F09D6A"
+          isLoading ? "#FFFFFF" : sectionColors[activeSection] || "#F09D6A"
         }
       />
       {/* Conteúdo da aplicação */}

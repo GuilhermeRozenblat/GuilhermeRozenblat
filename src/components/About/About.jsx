@@ -60,12 +60,12 @@ const About = () => {
                   </a>
                 </button>
 
-                <button className="btn">
+                {/*<button className="btn">
                   <a href={GuilhermeCV} download className="btn">
                     <p>Download CV</p>
                     <LuDownload />
                   </a>
-                </button>
+                </button>*/}
               </div>
             </div>
           </div>
