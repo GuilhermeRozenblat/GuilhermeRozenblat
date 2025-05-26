@@ -71,7 +71,7 @@ function App() {
       */}
       <MouseTrail
         color={
-          isLoading ? "#FFFFFF" : sectionColors[activeSection] || "#F09D6A"
+           "#FFFFFF"
         }
       />
       {/* Conteúdo da aplicação */}

@@ -59,7 +59,7 @@ function Home() {
               Rozenblat
             </span>
           </h1>
-          <h2 className="text2">Full-Stack Developer</h2>
+          <h2 className="text2">Fullstack Developer</h2>
         </div>
       </div>
     </section>

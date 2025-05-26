@@ -86,6 +86,9 @@
 .iconsubtitle {
     font-size: 1.3rem;
 }
+.final{
+    justify-content: center;
+}
 
 /* Responsive Styles */
 @media (max-width: 768px) {

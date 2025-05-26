@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Topnavbar.css";
-import GuiProfile from "../../assets/GuiProfilepic.png";
+import GuiProfile from "../../assets/guinew.png";
 import setaLink from "../../assets/arrow.svg";
 import { FaBars, FaTimes } from "react-icons/fa"; // Importação dos ícones para o menu móvel
 

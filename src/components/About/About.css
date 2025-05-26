@@ -68,11 +68,11 @@
 }
 
 .imagem img {
-  width: 400px;
+  width: 150px;
   margin: 0 20px;
   object-fit: cover;
   overflow: hidden;
-  border-radius: 12px;
+  border-radius: 50%;
   box-shadow: 4px 4px 4px rgb(0, 0, 0);
 }
 
@@ -157,7 +157,7 @@
   }
 
   .imagem img {
-      width: 300px;
+      width: 150px;
   }
 
   .textos {

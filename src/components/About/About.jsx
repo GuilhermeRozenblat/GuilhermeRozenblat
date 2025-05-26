@@ -1,7 +1,7 @@
 import "./About.css"; // Estilos separados para a seção
 import { LuDownload } from "react-icons/lu";
 import { LuExternalLink } from "react-icons/lu";
-import GuiAbout from "../../assets/guifotoaboutcut3.jpg";
+import GuiAbout from "../../assets/guinew.png";
 import GuilhermeCV from "../../assets/Guilherme Rozenblat - CV - EN.pdf";
 
 const About = () => {
@@ -18,34 +18,34 @@ const About = () => {
               <div className="textos">
                 <div className="texto">
                   <p>
-                    I am a <span>Computer Science</span> student at the
-                    Universidade Federal Fluminense (UFF) and work in software
-                    development, particularly in{" "}
-                    <span>
-                      cross-platform applications and data-driven technology
-                      solutions.
-                    </span>
+                    I’m a <span>Computer Science</span> undergraduate at
+                    <span> Federal Fluminense University (UFF)</span> and a
+                    <span> Full Stack Developer</span> specializing in
+                    <span> data-driven, cross-platform solutions</span>.
                   </p>
                 </div>
+
                 <div className="texto">
                   <p>
-                    I am involved in the entire software development lifecycle,
-                    from conception to implementation, maintenance, and database
-                    creation. I develop
-                    <span> Mobile </span> and <span>Web</span> applications
-                    using technologies such as
-                    <span> Flutter</span>,<span> React</span>,
-                    <span> Firebase</span>,<span> NodeJS</span>,
-                    <span> NestJS</span>, and
-                    <span> SQL databases</span>.
+                    I have hands-on experience with
+                    <span> C#</span>, <span>.NET</span>, <span>Node.js</span>,
+                    <span> React</span>, <span>Flutter</span>,{" "}
+                    <span>Firebase</span> and
+                    <span> SQL/NoSQL databases</span> (<span>SQL Server</span>,{" "}
+                    <span>PostgreSQL</span>,<span> MySQL</span>,{" "}
+                    <span>Firebase</span>).
                   </p>
                 </div>
+
                 <div className="texto">
                   <p>
-                    My implementations include user authentication, real-time
-                    data management, and integrations with database services,
-                    with a constant focus on building and maintaining efficient,
-                    well-integrated applications.
+                    I’ve contributed across the full software lifecycle—from
+                    requirements gathering and architectural design to
+                    implementation, deployment and maintenance—building features
+                    such as user authentication, real-time data synchronization
+                    and API integrations. I thrive on challenges, continuously
+                    leveling up my skills and delivering scalable, efficient
+                    applications that drive business value.
                   </p>
                 </div>
               </div>
